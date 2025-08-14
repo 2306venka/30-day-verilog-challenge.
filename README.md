@@ -10,13 +10,13 @@ The following gates are covered:
 - XOR
 - XNOR
 Files
-- basic_gates.v – Verilog code for basic gates.
-- basic_gates_tb.v – Testbench to verify the design.
-
+- gates.v – Verilog code for basic gates.
+-tb_gates.v – Testbench to verify the design.
 
 Expected Output
 - The truth tables of all basic gates will be verified using the testbench.
- Truth Table Example (AND Gate)
+- Simulation done using [EDA Playground]
+Truth Table Example (AND Gate)
 | A | B | Y |
 |---|---|---|
 | 0 | 0 | 0 |
@@ -24,7 +24,6 @@ Expected Output
 | 1 | 0 | 0 |
 | 1 | 1 | 1 |
 
----
-
 Day 1 Goal: 
 Understand how to write Verilog modules for basic gates and verify them using a testbench.
+Simulation done using EDA Playground
