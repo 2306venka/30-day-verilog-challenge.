@@ -1,14 +1,27 @@
-// Day 1 - Basic Gates (Gate Level Modeling)
-module basic_gates(
-    input a,
-    input b,
-    output and_out,
-    output or_out,
-    output not_a,
-    output xor_out
+// Day 1: Basic Logic Gates in Verilog
+// Author: Venkatesh C Sagar
+// Date: 2025-08-14
+// Description: This module implements AND, OR, NOT, NAND, NOR, XOR, and XNOR gates.
+
+module logic_gates(
+    input wire a,    // First input
+    input wire b,    // Second input
+    output wire and_out,
+    output wire or_out,
+    output wire not_a,
+    output wire nand_out,
+    output wire nor_out,
+    output wire xor_out,
+    output wire xnor_out
 );
-    and u1(and_out, a, b);
-    or  u2(or_out, a, b);
-    not u3(not_a, a);
-    xor u4(xor_out, a, b);
+
+    // Gate implementations
+    assign and_out  = a & b;     // AND gate
+    assign or_out   = a | b;     // OR gate
+    assign not_a    = ~a;        // NOT gate (only on input 'a')
+    assign nand_out = ~(a & b);  // NAND gate
+    assign nor_out  = ~(a | b);  // NOR gate
+    assign xor_out  = a ^ b;     // XOR gate
+    assign xnor_out = ~(a ^ b);  // XNOR gate
+
 endmodule
