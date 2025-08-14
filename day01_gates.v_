@@ -1,0 +1,14 @@
+// Day 1 - Basic Gates (Gate Level Modeling)
+module basic_gates(
+    input a,
+    input b,
+    output and_out,
+    output or_out,
+    output not_a,
+    output xor_out
+);
+    and u1(and_out, a, b);
+    or  u2(or_out, a, b);
+    not u3(not_a, a);
+    xor u4(xor_out, a, b);
+endmodule
