@@ -1,0 +1,6 @@
+ Day 3 - 2-to-1 Multiplexer (MUX) in Verilog
+
+Project Overview
+A Multiplexer (MUX)is a combinational circuit that selects one input out of multiple available inputs based on the select line.
+
+In this project, we implement a 2-to-1 MUX in Verilog and verify its functionality using a testbench and waveform simulation.
