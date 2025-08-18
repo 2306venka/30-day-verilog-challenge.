@@ -1,0 +1,23 @@
+Day 5 - 4-to-1 Multiplexer (MUX)
+
+A Multiplexer (MUX) is a combinational circuit that selects one input from multiple inputs and forwards it to a single output.  
+Here, we implement a 4-to-1 MUX in Verilog.
+
+- Inputs: 4 data inputs (`d[3:0]`), 2-bit select (`sel`)  
+- Output: Single output (`y`)  
+
+ 📝 Verilog Code
+Implemented using conditional (ternary) operators.
+
+🧪 Testbench
+The testbench checks the output for all select line combinations.
+
+ 📊 Waveform
+- When `sel = 00`, output = `d[0]`  
+- When `sel = 01`, output = `d[1]`  
+- When `sel = 10`, output = `d[2]`  
+- When `sel = 11`, output = `d[3]`  
+
+#🚀 Learning Outcome
+- Understood how multiplexers are implemented in Verilog.  
+- Learned to use **conditional operators** for logic selection.  
