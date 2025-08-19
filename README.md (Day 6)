@@ -1,0 +1,21 @@
+Day 6 - 1-to-4 Demultiplexer (DEMUX)
+
+On Day 6 of my 30 Days of Verilog Challenge, I implemented a 1-to-4 Demultiplexer.  
+A DEMUX takes a single input and channels it to exactly one of the multiple outputs, based on the select lines.
+- Input:`din` (data input)
+- Select Lines: `sel[1:0]` (2-bit control)
+- Outputs: `y0, y1, y2, y3`
+
+Files
+- `demux1to4.v` → Verilog implementation of 1:4 DEMUX  
+- `tb_demux1to4.v` → Testbench for simulation and waveform analysis  
+
+🖥️ Simulation
+- Tool Used: [EDA Playground](https://www.edaplayground.com/)  
+- Simulator: Icarus Verilog + EPWave for waveform visualization  
+📊 Waveform
+The waveform shows how the input is routed:
+- `sel = 00` → Output = `y0`  
+- `sel = 01` → Output = `y1`  
+- `sel = 10` → Output = `y2`  
+- `sel = 11` → Output = `y3`  
