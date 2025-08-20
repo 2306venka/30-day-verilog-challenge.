@@ -1,0 +1,24 @@
+Day 7: 2-to-4 Decoder
+A 2-to-4 Decoder takes 2 input lines and activates exactly one of the 4 outputs, based on the input combination.  
+It also has an enable (EN) signal to control activation.
+
+- Inputs: 2 (a1, a0)
+- Outputs: 4 (y3, y2, y1, y0)
+- Enable: 1 (en)
+
+ Truth Table
+
+| EN | A1 | A0 | Y3 Y2 Y1 Y0 |
+|----|----|----|-------------|
+| 0  |  X |  X | 0000        |
+| 1  |  0 |  0 | 0001        |
+| 1  |  0 |  1 | 0010        |
+| 1  |  1 |  0 | 0100        |
+| 1  |  1 |  1 | 1000        |
+
+📂 Files
+- `decoder2to4.v` → Verilog code for decoder  
+- `tb_decoder2to4.v` → Testbench with waveform generation  
+
+Output
+Waveform (EPWave) will show which output line goes HIGH for each input when `EN=1`.  
