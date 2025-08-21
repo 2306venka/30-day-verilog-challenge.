@@ -1,0 +1,30 @@
+Day 8: 3-to-8 Decoder
+
+A 3-to-8 Decoder expands 3 input bits into 8 unique outputs.  
+Only one output is active HIGH at a time, depending on the binary input, provided the **enable signal** is HIGH.  
+
+- Inputs: 3 (a2, a1, a0)  
+- Outputs: 8 (y7–y0)  
+- Enable: 1 (en)  
+
+Truth Table
+
+| EN | A2 | A1 | A0 | Y7 Y6 Y5 Y4 Y3 Y2 Y1 Y0 |
+|----|----|----|----|-------------------------|
+| 0  |  X |  X |  X | 00000000                |
+| 1  |  0 |  0 |  0 | 00000001                |
+| 1  |  0 |  0 |  1 | 00000010                |
+| 1  |  0 |  1 |  0 | 00000100                |
+| 1  |  0 |  1 |  1 | 00001000                |
+| 1  |  1 |  0 |  0 | 00010000                |
+| 1  |  1 |  0 |  1 | 00100000                |
+| 1  |  1 |  1 |  0 | 01000000                |
+| 1  |  1 |  1 |  1 | 10000000                |
+
+ Files
+- `decoder3to8.v` → Verilog module  
+- `tb_decoder3to8.v` → Testbench for waveform generation  
+
+ Output
+- The waveform shows that only one output goes HIGH for each input when EN=1.  
+- All outputs remain LOW when EN=0.  
