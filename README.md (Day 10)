@@ -1,0 +1,20 @@
+ Day 10 - Half Subtractor 🔢
+
+The Half Subtractor is a combinational circuit that performs subtraction of two single-bit binary numbers.  
+It produces two outputs:  
+- Difference (D = A ⊕ B) 
+- Borrow (B = ~A & B)
+
+ 📝 Truth Table
+| A | B | Difference | Borrow |
+|---|---|------------|--------|
+| 0 | 0 |     0      |   0    |
+| 0 | 1 |     1      |   1    |
+| 1 | 0 |     1      |   0    |
+| 1 | 1 |     0      |   0    |
+
+⚡ Files
+- `half_subtractor.v` → Verilog source code  
+- `half_subtractor_tb.v` → Testbench for waveform  
+
+ 
