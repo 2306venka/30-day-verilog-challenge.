@@ -1,0 +1,21 @@
+Day 11 - Full Subtractor 🔢
+The Full Subtractor is a combinational circuit that subtracts three input bits (A, B, Bin) and produces two outputs:  
+- Difference (D = A ⊕ B ⊕ Bin) 
+- Borrow (B = (~A & B) | (~(A ⊕ B) & Bin))
+
+ Truth Table
+| A | B | Bin | Difference | Borrow |
+|---|---|-----|------------|--------|
+| 0 | 0 |  0  |     0      |   0    |
+| 0 | 0 |  1  |     1      |   1    |
+| 0 | 1 |  0  |     1      |   1    |
+| 0 | 1 |  1  |     0      |   1    |
+| 1 | 0 |  0  |     1      |   0    |
+| 1 | 0 |  1  |     0      |   0    |
+| 1 | 1 |  0  |     0      |   1    |
+| 1 | 1 |  1  |     1      |   1    |
+
+ Files
+- `full_subtractor.v` → Verilog source code  
+- `full_subtractor_tb.v` → Testbench with waveform  
+
