@@ -1,0 +1,19 @@
+Day 12: SR Latch (NOR-based)
+An **SR Latch** is a basic sequential circuit built using two **NOR gates** with feedback.  
+It stores **1-bit of data** and is considered one of the fundamental building blocks of memory.
+
+- **S (Set):** Sets output Q = 1  
+- **R (Reset):** Resets output Q = 0  
+- **Hold:** When S = 0 and R = 0, latch holds its previous state  
+- **Invalid:** When S = 1 and R = 1 simultaneously → invalid condition  
+
+📂 Files
+- `sr_latch.v` → Verilog code for SR Latch  
+- `sr_latch_tb.v` → Testbench to generate waveform  
+ Simulation
+
+Expected Waveform
+- Q = 1 when **Set**  
+- Q = 0 when **Reset**  
+- Holds previous value when **S=0, R=0**  
+- Invalid when **S=1, R=1**
