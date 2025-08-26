@@ -1,0 +1,18 @@
+# Day 13 - JK Flip-Flop (Positive Edge Triggered)
+A JK Flip-Flop is a universal sequential element that can perform the operations of **SR, D, and T flip-flops**.  
+- `J=0, K=0` → No change  
+- `J=0, K=1` → Reset  
+- `J=1, K=0` → Set  
+- `J=1, K=1` → Toggle  
+
+ Files
+- `jk_ff.v` → Design file
+- `tb_jk_ff.v` → Testbench
+
+▶️ Simulation
+- Simulator: Icarus Verilog (via EDA Playground)
+- Waveforms generated using `$dumpfile` & `$dumpvars`
+ 📊 Output
+The waveform shows:
+- **Set, Reset, Toggle operations** of JK Flip-Flop  
+- Proper synchronous behavior with clock  
