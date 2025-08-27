@@ -1,0 +1,28 @@
+# Day 14 – T Flip-Flop (Toggle Flip-Flop)
+
+## 🔎 Introduction
+The T Flip-Flop, also known as the **Toggle Flip-Flop**, is a sequential circuit that changes its output state whenever the input **T = 1** on the clock’s active edge.  
+- When **T = 0**, it holds the current state.  
+- When **T = 1**, it toggles the output.  
+
+It is widely used in **counters, frequency dividers, and control systems**.
+
+---
+
+## 📂 Verilog Code
+```verilog
+module t_ff (
+    input clk,
+    input reset,
+    input T,
+    output reg Q
+);
+
+    always @(posedge clk or posedge reset) begin
+        if (reset)
+            Q <= 0;
+        else if (T)
+            Q <= ~Q;
+    end
+
+endmodule
