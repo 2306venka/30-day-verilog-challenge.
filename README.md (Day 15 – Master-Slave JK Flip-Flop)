@@ -1,0 +1,9 @@
+# Day 15 – Master-Slave JK Flip-Flop
+
+## 🔎 Introduction
+The **Master-Slave JK Flip-Flop** is a sequential circuit designed to eliminate the **race-around problem** found in JK Flip-Flops.  
+It uses two latches:
+- **Master latch** → active on the positive edge of the clock.
+- **Slave latch** → active on the negative edge of the clock.
+
+Thus, the output changes only once per clock cycle.
