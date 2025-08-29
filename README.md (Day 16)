@@ -1,0 +1,5 @@
+Day 16 - D Flip-Flop with Enable
+The **D Flip-Flop with Enable** is an extension of the basic D Flip-Flop.  
+It captures the input `D` **only when `Enable = 1`** at the rising edge of the clock.  
+When `Enable = 0`, the output `Q` remains unchanged regardless of input.
+
