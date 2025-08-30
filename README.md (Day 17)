@@ -1,0 +1,20 @@
+ Day 17 - 30 Days of Verilog Challenge 🚀
+
+## 📌 Project: 4-bit Synchronous Counter
+
+### 🔹 Description
+A **synchronous counter** is a digital circuit where all flip-flops are triggered by the same clock signal.  
+In this project, I implemented a **4-bit up counter** that increments on each positive clock edge.
+
+### 🔹 Features
+- 4-bit counter (counts from 0 to 15)
+- Synchronous reset
+- Increments on each clock pulse
+
+### 🔹 Waveform
+The waveform shows the counter incrementing values `0000 → 1111`.
+
+### 🔹 Applications
+- Digital clocks ⏰
+- Event counters
+- Frequency dividers
