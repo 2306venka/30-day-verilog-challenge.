@@ -1,0 +1,15 @@
+ Day 19 – 4-bit Up/Down Counter
+- `up_down = 1` → Counter increases (0000 → 0001 → … → 1111)  
+- `up_down = 0` → Counter decreases (1111 → 1110 → … → 0000)  
+📂 Files
+- `design.sv` – RTL for 4-bit up/down counter  
+- `testbench.sv` – Testbench with clock, reset, and control  
+- `updown_counter.vcd` – Waveform output  
+⚡ Simulation
+1. Reset sets counter to 0  
+2. Counts upward for a few cycles  
+3. Switches to downward counting  
+4. Switches back to upward counting  
+
+## 📊 Waveform
+The waveform clearly shows binary incrementing and decrementing sequences.
