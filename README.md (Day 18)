@@ -1,0 +1,19 @@
+ Day 18 – 4-bit Asynchronous (Ripple) Counter
+📘 Overview
+Today I implemented a **4-bit asynchronous counter** in Verilog.  
+Unlike synchronous counters, asynchronous counters toggle each flip-flop on the **output of the previous flip-flop**, making them slower but simple to design.
+
+📂 Files
+- `design.sv` – RTL for 4-bit ripple counter  
+- `testbench.sv` – Testbench with clock & reset  
+- `async_counter.vcd` – Waveform output  
+
+Simulation
+1. Clock toggles every 10ns  
+2. Reset applied at start  
+3. Counter increments on falling edges  
+
+📊 Waveform
+- Bit `q[0]` toggles fastest  
+- Bit `q[3]` toggles slowest  
+- Binary sequence: 0000 → 0001 → 0010 → 0011 … up to 1111 → repeat  
