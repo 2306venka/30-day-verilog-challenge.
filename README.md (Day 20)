@@ -1,0 +1,28 @@
+# Day 20 – Modulo-10 (Decade) Counter
+
+## 📘 Overview
+On **Day 20**, I designed a **Modulo-10 counter (Decade Counter)** in Verilog.  
+This counter counts from **0 → 9** and then resets back to 0, repeating the cycle.  
+
+It is commonly used in:
+- Digital clocks (0–9 digits for seconds, minutes)
+- Timers
+- Frequency dividers
+
+## 📂 Files
+- `design.sv` – RTL for Mod-10 counter  
+- `testbench.sv` – Testbench with clock & reset  
+- `mod10_counter.vcd` – Waveform output  
+
+## ⚡ Simulation
+1. Reset applied at the start  
+2. Counter increments from 0 to 9  
+3. Rolls back to 0 and continues  
+
+## 📊 Waveform
+- Shows counting sequence 0000 → 0001 → … → 1001 → 0000  
+- Repeats cyclically  
+
+---
+
+🛠️ Tools: **Verilog, Icarus Verilog, EDA Playground**
