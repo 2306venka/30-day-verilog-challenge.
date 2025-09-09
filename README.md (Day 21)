@@ -1,0 +1,30 @@
+# Day 21 – Generic Mod-N Counter (Parameterized)
+
+## 📘 Overview
+On **Day 21**, I implemented a **parameterized Mod-N counter** in Verilog.  
+Unlike fixed counters, this design uses **Verilog parameters** to configure:
+- `N` → modulus (reset after N-1)  
+- `WIDTH` → number of bits required  
+
+This makes the counter reusable for any modulus, such as:
+- Mod-10 (decade counter)
+- Mod-12 (clock hour counter)
+- Mod-60 (minutes/seconds in digital clocks)
+
+## 📂 Files
+- `design.sv` – RTL for Mod-N counter (parameterized)  
+- `testbench.sv` – Testbench for Mod-12 simulation  
+- `modN_counter.vcd` – Waveform output  
+
+## ⚡ Simulation
+1. Reset initializes counter to 0  
+2. Counter increments up to N-1 (11 for N=12)  
+3. Rolls back to 0 and continues  
+
+## 📊 Waveform
+- Shows counting sequence: 0000 → 0001 → … → 1011 → 0000  
+- Demonstrates cyclic operation  
+
+---
+
+🛠️ Tools: **Verilog, Icarus Verilog, EDA Playground**
