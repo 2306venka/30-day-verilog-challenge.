@@ -1,0 +1,21 @@
+Day 22 – 4-bit Serial-In Serial-Out (SISO) Shift Register
+On Day 22, I designed a **4-bit SISO shift register** in Verilog.  
+It shifts data bit-by-bit from input to output on each clock cycle.
+
+- New bit enters at LSB (shift_reg[0])  
+- Existing bits shift left  
+- Oldest bit appears at the output  
+
+📂 Files
+- `design.sv` – RTL for 4-bit SISO shift register  
+- `testbench.sv` – Testbench with serial input sequence  
+- `siso_shift_register.vcd` – Waveform output  
+
+⚡ Simulation
+1. Reset clears the register  
+2. Serial input `1011` is shifted in  
+3. After 4 clocks, the sequence appears at the output  
+
+📊 Waveform
+- Shows bits moving through each stage of the register  
+- Final serial_out gives the oldest bit in the sequence  
