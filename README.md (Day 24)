@@ -1,0 +1,22 @@
+# Day 24 – 4-bit Parallel-In Serial-Out (PISO) Shift Register
+
+## 📘 Overview
+On **Day 24**, I designed a **4-bit PISO shift register** in Verilog.  
+This circuit is the reverse of SIPO — instead of receiving data serially, we **load data in parallel** and then shift it out bit by bit.
+
+- **Load mode** → Captures all 4 bits at once  
+- **Shift mode** → Sends bits out serially (LSB first here)  
+
+## 📂 Files
+- `design.sv` – RTL for PISO shift register  
+- `testbench.sv` – Testbench to verify both load & shift operation  
+- `piso_shift_register.vcd` – Waveform dump  
+
+## ⚡ Simulation Steps
+1. Reset clears the register  
+2. Load `1011` → shifts out `1 → 1 → 0 → 1`  
+3. Load `1100` → shifts out `0 → 0 → 1 → 1`  
+
+## 📊 Waveform
+- Waveform shows **parallel load** happening instantly  
+- Then **serial_out** bitstream visible on each clock  
