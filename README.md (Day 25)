@@ -1,0 +1,29 @@
+# Day 25 – Universal 4-bit Shift Register
+
+## 📘 Overview
+On **Day 25**, I implemented a **Universal Shift Register** in Verilog.  
+It combines **SISO, SIPO, PISO, and PIPO** into one design using a 2-bit control input.
+
+### Modes:
+- `00` → Hold (no change)  
+- `01` → Shift Right  
+- `10` → Shift Left  
+- `11` → Parallel Load  
+
+## 📂 Files
+- `design.sv` – RTL for universal shift register  
+- `testbench.sv` – Testbench with all 4 operations  
+- `universal_shift_register.vcd` – Waveform dump  
+
+## ⚡ Simulation Flow
+1. Load parallel data `1010`  
+2. Hold the data  
+3. Shift right → bits move towards LSB  
+4. Shift left → bits move towards MSB  
+5. Load new parallel value `1101`  
+6. Hold again  
+
+## 📊 Waveform
+- Shows **parallel load** instantly  
+- Clear **shift left** and **shift right** operations  
+- Validates versatility of the register  
