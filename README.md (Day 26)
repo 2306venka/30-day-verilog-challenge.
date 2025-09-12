@@ -1,0 +1,31 @@
+ Day 26 – 4-bit Arithmetic Logic Unit (ALU)
+
+On **Day 26**, I implemented a **4-bit ALU** in Verilog.  
+This is one of the **core digital circuits** used in CPUs and processors.
+
+Supported Operations:
+- `000` → Addition  
+- `001` → Subtraction  
+- `010` → AND  
+- `011` → OR  
+- `100` → XOR  
+- `101` → NOT  
+- `110` → Shift Left  
+- `111` → Shift Right  
+
+
+- `design.sv` – RTL for ALU  
+- `testbench.sv` – Testbench with multiple operations  
+- `alu_4bit.vcd` – Waveform dump  
+
+## ⚡ Simulation Flow
+1. Add `0101 + 0011 = 1000`  
+2. Subtract `0101 - 0011 = 0010`  
+3. AND, OR, XOR operations verified  
+4. NOT applied on A  
+5. Shift Left & Shift Right on A  
+
+## 📊 Waveform
+- Shows correct **result** for each operation  
+- **Carry flag** active during addition overflow  
+- **Zero flag** asserted when result is `0000`  
