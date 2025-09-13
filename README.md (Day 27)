@@ -1,0 +1,24 @@
+# Day 27 - FIFO (First In First Out Memory)
+In this project, I implemented a synchronous FIFO (First In First Out)** memory buffer using Verilog.  
+FIFO is commonly used in digital systems for **data buffering** (e.g., UART, networking, pipelines).
+
+- **Depth**: 4  
+- **Width**: 8 bits  
+- **Operations**: Write, Read  
+- **Status Flags**: `full`, `empty`  
+
+---
+
+
+- `design.sv` → FIFO design  
+- `testbench.sv` → Testbench with waveform generation  
+
+ 📊 Simulation
+- Writes three values into FIFO  
+- Reads two values  
+- Writes one more value  
+- Reads remaining values  
+ Tools Used
+- **EDA Playground**  
+- **Icarus Verilog**  
+- **EPWave for waveform**  
