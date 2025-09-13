@@ -1,0 +1,21 @@
+# Day 28 - RAM (Random Access Memory)
+
+ Project Description
+In this project, I implemented a simple **8x8 RAM** in Verilog.  
+The RAM supports **read and write operations** controlled by enable signals.
+
+- **Depth**: 8 locations  
+- **Width**: 8 bits  
+- **Inputs**: Address, Data, Write Enable, Read Enable  
+- **Output**: Data (during read)  
+ 📂 Files
+- `design.sv` → RAM design  
+- `testbench.sv` → Testbench with waveform generation  
+ 📊 Simulation
+- Writes data into 3 memory locations  
+- Reads data back from those addresses  
+- Validates storage functionality  
+ 🛠 Tools Used
+- **EDA Playground**  
+- **Icarus Verilog**  
+- **EPWave for waveform**  
