@@ -1,0 +1,18 @@
+Day 29 - ROM (Read Only Memory)
+
+
+In this project, I implemented a simple **8x8 ROM** in Verilog.  
+ROM is used to store **constant values** like lookup tables, instruction sets, or sine wave samples.
+
+- **Depth**: 8 locations  
+- **Width**: 8 bits  
+- **Operation**: Read-only (values preloaded at initialization)  
+
+ 📊 Simulation
+- ROM initialized with 8 constant values  
+- Testbench reads all 8 addresses  
+- Output matches stored values  
+🛠 Tools Used
+- **EDA Playground**  
+- **Icarus Verilog**  
+- **EPWave for waveform**  
