@@ -1,0 +1,25 @@
+Day 30 - Bidirectional Shift Register
+
+Today marks the **final day** of my 30-Day Verilog Challenge 🚀.  
+I implemented a **Bidirectional Shift Register**, which can:
+- Shift data left
+- Shift data right
+- Load parallel data
+- Hold/reset data
+
+This project completes my journey from basic logic gates → flip-flops → counters → registers → shift registers.
+
+- `design.sv` → Bidirectional Shift Register
+- `testbench.sv` → Testbench with waveform generation
+ 🖥️ Simulation
+- Tool: **EDA Playground**
+- Generates `.vcd` file for waveform analysis
+- Clock: 10ns (5ns High, 5ns Low)
+ 📊 Output
+- Load `1010`
+- Shift right 4 times
+- Shift left 4 times
+ 🎯 Learning
+- Practical use of registers in CPUs and DSPs
+- Control with **direction & load signals**
+- Completed the **30-Day Verilog Challenge**
